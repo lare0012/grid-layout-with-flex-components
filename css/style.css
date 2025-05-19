@@ -1,0 +1,83 @@
+/* reset & global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+/* header */
+.siteheader {
+  text-align: left;
+  padding: 1rem 1rem;
+}
+.siteheader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* grid container */
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* individual card */
+.emoji {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* icon styling & positioning */
+.icon {
+  font-size: 3rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  order: -1; /* move icon above the h2 */
+}
+
+/* title & underline */
+.emoji h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* body text */
+.emoji p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #292929;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* button-style */
+.emoji a {
+  display: block;
+  text-align: left;
+  background: #7c27f0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-top: auto;
+}
+.emoji a:hover {
+  background: #651db8;
+}
